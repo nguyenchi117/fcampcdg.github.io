@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<style>
+  .container 
+  {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  h1 
+  {
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 1000%;
+  }
+  body,h2,h3
+  {
+    font-family: "Raleway", sans-serif
+  }
+  body, html 
+  {
+    height: 100%
+  }
+  p 
+  {
+    line-height: 2
+  }
+  .bgimg, .bgimg2 
+  {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  .bgimg {background-image: url("./images/Assigment3/DSCF5979.jpg")}
+  .bgimg2 {background-image: url("./images/Assigment3/IMG_1731.jpg")}
+
+  .button {
+    position: relative;
+    background-color: #ff3b00;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+</style>
+<body>
+
+  <!-- Header / Home-->
+  <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-text-white w3-center" style="text-align: center; margin: auto">
+      <h1 style="color: #ff3b00">F-CAMP</h1>
+      <h2 style="background: #EBDCA2; color: #ff3b00; padding: 10px 20px; border-radius: 8px">The best event of your University Life</h2>
+      <br>
+      <h2><b style="background: #EBDCA2; color: #ff3b00; padding: 10px 20px; border-radius: 8px">Comming soon: 17.09.2021</b></h2>
+      <br>
+      <br>
+
+      <button class="button">Register</button>
+    </div>
+  </header>
+
+  <!-- Navbar (sticky bottom) -->
+  <div class="w3-bottom w3-hide-small">
+    <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+      <a href="#home" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Home</a>
+      <a href="#information" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Information</a>
+      <a href="#benefits" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Benefits</a>
+      <a href="#gallery" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Moments</a>
+      <a href="#register" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Register</a>
+    </div>
+  </div>
+
+  <!-- About / Information -->
+  <br>
+  <br>
+  <div style="background-color: white " class="w3-container" id="information">
+    <div class="w3-content" style="max-width: 1100px">
+      <div class="w3-row" style="background: #F08E38; border-radius: 8px">
+        <br>
+        <h3 style="color: white; text-align: center; padding: 20px 0px"><b>Information</b></h3>
+        <div class="w3-row" style="color: white; text-align: center; padding: 20px 0px">
+          <p style="color: white; padding: 0px 150px">F-Camp is an annual program organized by the above-mentioned students to welcome the new students of FPT University. F-Camp was created to connect the students together, giving new students a unique atmosphere and characteristics at FPT University.
+          </p>
+        </div>
+
+        <div class="w3-half" style="color: white; text-align: center; padding: 24px 0px">
+          <h3><b>.When</b></h3>
+          <p>Morning Activities - 8H00 am</p>
+          <p>Lunch - 12:00 pm</p>
+          <p>Afternoon Activities - 14:00 pm</p>
+          <p>Dinner - 18:00 pm</p>
+          <p>Evening Activities - 19:30 pm</p>
+        </div>
+        <div class="w3-half"style="color: white; text-align: center; padding: 0px 0px">
+          <h3><b>Where</b></h3>
+          <p>FPT Hoa Lac Campus</p>
+          <p>30M Street</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Benefits-->
+  <section>
+   <br>
+   <br>
+   <br>
+   <h2 style="text-align: center;"><b>What we will get when you join F-Camp?</b></h1>
+     <br>
+     <div class="container" id="benefits">
+      <div class="row">
+        <div class="col">
+          <video width="100%" autoplay muted loop>
+            <source src="C:\Users\Chi Nguyen\Desktop\Web 2\images\F-Camp.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="col" style="text-align: left;">
+            <br>
+            <h3><b>A Memorable Memories.</b></h3>
+            <p >It is more than an event, it is a tradition.</p>
+            <h3><b>Banquet of Enthusiam and Youth.</b></h3>
+            <p >Join the event to mark the start of your colorful youth at FPT University.</p>
+            <h3><b>Have More Friends.</b></h3>
+            <p >You will easily get to know and connect with new friends through collective activities.</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <!--Gallery code starts here-->
+      <section>
+       <br>
+       <br>
+       <br>
+       <h2 style="text-align: center;"><b>Memories</b></h2>
+       <br>
+       <br>
+
+       <div class="container" id="gallery">
+        <!-- First Row 1-->
+        <div class="row">
+         <!-- I have 3 columns with 3 respective images + text -->
+         <!--Col 1-->
+         <div class="col">
+          <img src="./images/test1.jpg" width="330" height="330" style="padding-bottom: 15px">
+        </div>
+        <!--Col 2-->
+        <div class="col">
+          <img src="./images/test2.jpg" width="330" height="330" style="padding-bottom: 15px">
+        </div>
+        <!--Col 3-->
+        <div class="col">
+          <img src="./images/test3.jpg" width="330" height="330" style="padding-bottom: 15px">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+       <!-- I have 3 columns with 3 respective images + text -->
+       <!--Col 1-->
+       <div class="col">
+        <img src="./images/test4.jpg" width="330" height="330" style="padding-bottom: 15px">
+      </div>
+      <!--Col 2-->
+      <div class="col">
+        <img src="./images/test5.jpg" width="330" height="330" style="padding-bottom: 15px">
+      </div>
+      <!--Col 3-->
+      <div class="col">
+        <img src="./images/test6.jpg" width="330" height="330" style="padding-bottom: 15px">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+       <!-- I have 3 columns with 3 respective images + text -->
+       <!--Col 1-->
+       <div class="col">
+        <img src="./images/test7.jpg" width="330" height="330" style="padding-bottom: 15px">
+      </div>
+      <!--Col 2-->
+      <div class="col">
+        <img src="./images/test8.jpg" width="330" height="330" style="padding-bottom: 15px">
+      </div>
+      <!--Col 3-->
+      <div class="col">
+        <img src="./images/test9.jpg" width="330" height="330" style="padding-bottom: 15px">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ask -->
+<div style="background:#EBDCA2; " class="w3-container w3-padding-64 w3-center w3-wide" id="register">
+  <p class="w3-large">280+ student decided to join with us!</p>
+  <h2><b>So you? Do you want to burn with us?</b></h2>
+  <p class="w3-xlarge">
+    <div class="container" style="text-align: center;">
+      <div style="margin-right: -15px; margin-left: -15px;">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px"><a style="color: white" href="https://www.facebook.com/FCampFU" target="_blank"> Yes</a></button>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-orange w3-hover-opacity-off" style="padding:8px 60px"><a style="color: white" href="https://www.facebook.com/FCampFU" target="_blank">Of Course Yes</a></button>
+      </div>
+    </div>
+  </p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Contact us at &ensp; &ensp;<a href="https://www.facebook.com/FCampFU" title="W3.CSS" target="_blank" class="w3-hover-text-green">F-CAMP</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
